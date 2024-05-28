@@ -158,7 +158,8 @@ static int ksbb_pm_action(const struct device *dev, enum pm_device_action action
 
 #define ENTRY(e)                                                                                   \
     {                                                                                              \
-        .row = DT_PROP(e, row), .column = DT_PROP(e, column),                                      \
+        .row = DT_PROP(e, row),                                                                    \
+        .column = DT_PROP(e, column),                                                              \
         .binding = ZMK_KEYMAP_EXTRACT_BINDING(0, e),                                               \
     }
 

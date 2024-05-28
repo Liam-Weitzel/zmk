@@ -39,7 +39,7 @@ static uint8_t _zmk_keymap_layer_default = 0;
 #endif
 
 #define TRANSFORMED_LAYER(node)                                                                    \
-    { LISTIFY(DT_PROP_LEN(node, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), node) }
+    {LISTIFY(DT_PROP_LEN(node, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), node)}
 
 #if ZMK_KEYMAP_HAS_SENSORS
 #define _TRANSFORM_SENSOR_ENTRY(idx, layer)                                                        \

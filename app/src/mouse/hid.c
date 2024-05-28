@@ -104,6 +104,4 @@ void zmk_hid_mouse_clear(void) {
     memset(&mouse_report.body, 0, sizeof(mouse_report.body));
 }
 
-struct zmk_hid_mouse_report *zmk_mouse_hid_get_mouse_report(void) {
-    return &mouse_report;
-}
+struct zmk_hid_mouse_report *zmk_mouse_hid_get_mouse_report(void) { return &mouse_report; }
