@@ -1,4 +1,4 @@
-https://zmk.dev/docs/development/setup/docker
+https://zmk.dev/docs/development/local-toolchain/setup/docker
 
 https://docs.docker.com/engine/install/linux-postinstall/
 
