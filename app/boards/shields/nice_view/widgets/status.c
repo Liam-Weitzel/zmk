@@ -179,10 +179,40 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     lv_canvas_draw_rect(canvas, 0, 0, CANVAS_SIZE, CANVAS_SIZE, &rect_black_dsc);
 
     // Draw layer
-    if (state->layer_label == NULL) {
+    if (state->layer_label == NULL || strlen(state->layer_label) == 0) {
         char text[10] = {};
 
-        sprintf(text, "LAYER %i", state->layer_index);
+        if (state->layer_index == 0) {
+            strcpy(text, "HOME");
+        } else if (state->layer_index == 1) {
+            strcpy(text, "NAV");
+        } else if (state->layer_index == 2) {
+            strcpy(text, "NAV");
+        } else if (state->layer_index == 3) {
+            strcpy(text, "NAV");
+        } else if (state->layer_index == 4) {
+            strcpy(text, "FUNC");
+        } else if (state->layer_index == 5) {
+            strcpy(text, "FUNC");
+        } else if (state->layer_index == 6) {
+            strcpy(text, "FUNC");
+        } else if (state->layer_index == 7) {
+            strcpy(text, "NUM");
+        } else if (state->layer_index == 8) {
+            strcpy(text, "NUM");
+        } else if (state->layer_index == 9) {
+            strcpy(text, "NUM");
+        } else if (state->layer_index == 10) {
+            strcpy(text, "SYS");
+        } else if (state->layer_index == 11) {
+            strcpy(text, "SYS");
+        } else if (state->layer_index == 12) {
+            strcpy(text, "SYS");
+        } else if (state->layer_index == 13) {
+            strcpy(text, "TEST");
+        } else {
+            sprintf(text, "LAYER %i", state->layer_index);
+        }
 
         lv_canvas_draw_text(canvas, 0, 5, 68, &label_dsc, text);
     } else {
