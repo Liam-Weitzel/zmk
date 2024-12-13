@@ -203,12 +203,18 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
         } else if (state->layer_index == 9) {
             strcpy(text, "NUM");
         } else if (state->layer_index == 10) {
-            strcpy(text, "SYS");
+            strcpy(text, "NGRAM");
         } else if (state->layer_index == 11) {
-            strcpy(text, "SYS");
+            strcpy(text, "NGRAM");
         } else if (state->layer_index == 12) {
-            strcpy(text, "SYS");
+            strcpy(text, "NGRAM");
         } else if (state->layer_index == 13) {
+            strcpy(text, "SYS");
+        }  else if (state->layer_index == 14) {
+            strcpy(text, "SYS");
+        }  else if (state->layer_index == 15) {
+            strcpy(text, "SYS");
+        }  else if (state->layer_index == 16) {
             strcpy(text, "TEST");
         } else {
             sprintf(text, "LAYER %i", state->layer_index);
