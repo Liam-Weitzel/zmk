@@ -477,7 +477,7 @@ config ZMK_COMBO_MAX_PRESSED_COMBOS
 
 config ZMK_COMBO_MAX_COMBOS_PER_KEY
     int "Maximum number of combos per key"
-    default 20
+    default 200
 
 config ZMK_COMBO_MAX_KEYS_PER_COMBO
     int "Maximum number of keys per combo"
