@@ -190,26 +190,24 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
             strcpy(text, "NAV");
         } else if (state->layer_index == 3) {
             strcpy(text, "NAV");
-        } else if (state->layer_index == 4) {
-            strcpy(text, "FUNC");
+        }  else if (state->layer_index == 4) {
+            strcpy(text, "NUM");
         } else if (state->layer_index == 5) {
-            strcpy(text, "FUNC");
+            strcpy(text, "NUM");
         } else if (state->layer_index == 6) {
-            strcpy(text, "FUNC");
+            strcpy(text, "NUM");
         } else if (state->layer_index == 7) {
-            strcpy(text, "NUM");
+            strcpy(text, "FUNC");
         } else if (state->layer_index == 8) {
-            strcpy(text, "NUM");
+            strcpy(text, "FUNC");
         } else if (state->layer_index == 9) {
-            strcpy(text, "NUM");
+            strcpy(text, "FUNC");
         } else if (state->layer_index == 10) {
             strcpy(text, "SYS");
         }  else if (state->layer_index == 11) {
             strcpy(text, "SYS");
         }  else if (state->layer_index == 12) {
             strcpy(text, "SYS");
-        }  else if (state->layer_index == 13) {
-            strcpy(text, "TEST");
         } else {
             sprintf(text, "LAYER %i", state->layer_index);
         }
