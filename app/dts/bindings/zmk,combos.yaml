@@ -17,7 +17,7 @@ child-binding:
       required: true
     timeout-ms:
       type: int
-      default: 75
+      default: 50
     require-prior-idle-ms:
       type: int
       default: -1
